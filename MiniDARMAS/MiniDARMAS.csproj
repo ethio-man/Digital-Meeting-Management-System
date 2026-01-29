@@ -6,6 +6,17 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- Application Metadata -->
+    <AssemblyName>MiniDARMAS</AssemblyName>
+    <Product>Digital Meeting Management System</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <Company>ethio-man</Company>
+    <Copyright>Copyright © 2026 ethio-man</Copyright>
+    <Description>Meeting management and transcription system for recording, agenda tracking, and official minutes generation.</Description>
+    <ApplicationIcon>MiniDARMAS.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZF/lGKcoebQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS.Installer\\MiniDARMAS.Installer.wixproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nati\\.nuget\\packages\\wixtoolset.heat\\5.0.0\\wixtoolset.heat.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

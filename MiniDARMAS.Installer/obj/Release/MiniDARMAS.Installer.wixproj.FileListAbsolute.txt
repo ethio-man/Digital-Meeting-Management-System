@@ -1,0 +1,7 @@
+C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\MiniDARMAS.Installer\bin\Release\MiniDARMAS.Installer.msi
+C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\MiniDARMAS.Installer\bin\Release\MiniDARMAS.Installer.wixpdb
+C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\MiniDARMAS.Installer\obj\Release\MiniDARMAS.Installer.wixproj.CoreCompileInputs.cache
+C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\MiniDARMAS.Installer\obj\Release\_PublishedFiles_dir.wxs
+C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\MiniDARMAS.Installer\obj\Release\MiniDARMAS.Installer.msi
+C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\MiniDARMAS.Installer\obj\Release\MiniDARMAS.Installer.wixpdb
+C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\MiniDARMAS.Installer\obj\Release\MiniDARMAS.Installer.wixproj.BindTracking-neutral.txt

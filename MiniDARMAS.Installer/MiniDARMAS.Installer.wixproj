@@ -1,0 +1,20 @@
+<Project Sdk="WixToolset.Sdk/6.0.0">
+  <PropertyGroup>
+    <OutputType>Package</OutputType>
+    <InstallerPlatform>x64</InstallerPlatform>
+    <DefineConstants>DeployDir=C:\Users\Nati\OneDrive\Desktop\Media\Meeting Management\publish</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Heat" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <HarvestDirectory Include="$(MSBuildProjectDirectory)\..\publish">
+      <ComponentGroupName>PublishedFiles</ComponentGroupName>
+      <DirectoryRefId>INSTALLFOLDER</DirectoryRefId>
+      <SuppressRegistry>true</SuppressRegistry>
+      <SuppressRootDirectory>true</SuppressRootDirectory>
+      <PreprocessorVariable>var.DeployDir</PreprocessorVariable>
+    </HarvestDirectory>
+  </ItemGroup>
+</Project>

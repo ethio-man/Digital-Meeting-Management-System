@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Mini DARMAS - Copy\\MiniDARMAS\\MiniDARMAS.csproj": {}
+    "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS\\MiniDARMAS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Mini DARMAS - Copy\\MiniDARMAS\\MiniDARMAS.csproj": {
+    "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS\\MiniDARMAS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Mini DARMAS - Copy\\MiniDARMAS\\MiniDARMAS.csproj",
+        "projectUniqueName": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS\\MiniDARMAS.csproj",
         "projectName": "MiniDARMAS",
-        "projectPath": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Mini DARMAS - Copy\\MiniDARMAS\\MiniDARMAS.csproj",
+        "projectPath": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS\\MiniDARMAS.csproj",
         "packagesPath": "C:\\Users\\Nati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Mini DARMAS - Copy\\MiniDARMAS\\obj\\",
+        "outputPath": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -88,6 +88,10 @@
               "version": "[6.0.36, 6.0.36]"
             },
             {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[6.0.36, 6.0.36]"
             },
@@ -96,7 +100,15 @@
               "version": "[6.0.36, 6.0.36]"
             },
             {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
               "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
               "version": "[6.0.36, 6.0.36]"
             }
           ],
@@ -109,6 +121,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

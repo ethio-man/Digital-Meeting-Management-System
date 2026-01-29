@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS.Installer\\MiniDARMAS.Installer.wixproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS.Installer\\MiniDARMAS.Installer.wixproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS.Installer\\MiniDARMAS.Installer.wixproj",
+        "projectName": "MiniDARMAS.Installer",
+        "projectPath": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS.Installer\\MiniDARMAS.Installer.wixproj",
+        "packagesPath": "C:\\Users\\Nati\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nati\\OneDrive\\Desktop\\Media\\Meeting Management\\MiniDARMAS.Installer\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "native"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "native": {
+            "targetAlias": "native",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "native": {
+          "targetAlias": "native",
+          "dependencies": {
+            "WixToolset.Heat": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
