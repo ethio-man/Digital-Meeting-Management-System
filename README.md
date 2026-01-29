@@ -105,7 +105,7 @@ A WinForms-based meeting management and transcription system that supports recor
 ---
 ## The installer package is located at: 
 ```bash
-MiniDARMAS.Installer\bin\Debug\MiniDARMAS.Installer.msi
+MiniDARMAS.Installer\bin\Release\MiniDARMAS.Installer.msi
 ```
 - Download/Copy: Get the MiniDARMAS.Installer.msi file to the target computer.
 - Run: Double-click the file to start the setup wizard.
