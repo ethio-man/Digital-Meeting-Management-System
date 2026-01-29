@@ -121,113 +121,19 @@ A WinForms-based meeting management and transcription system that supports recor
 ---
 
 ## Installation
-
-### Step 1: Install Required Software
-
-- Install Microsoft Windows 10 or later
-
-- Install Microsoft Visual Studio
-
-- Select .NET desktop development workload
-
-- Install Microsoft SQL Server (Express or LocalDB)
-
-- Install SQL Server Management Studio (SSMS)
-
-### Step 2: Set Up the Database
-
-- Open SSMS
-- Connect to SQL Server
-- Create the database:
-- CREATE DATABASE MiniDARMAS_DB;
-- Run the provided SQL scripts to create all required tables:
-- Users
-- Meetings
-- Agendas
-- Recordings
-- Transcriptions
-- ActivityLogs
-- Verify tables are created successfully
-
-### Step 3: Configure Database Connection
-
-- Open the project in Visual Studio
-- Edit App.config
-- Set the correct connection string:
+This Desktop app is user ready published Application software so you can install it direcly to your machine 
+---
+## The installer package is located at: 
 ```bash
-<connectionStrings>
-  <add name="MiniDARMAS_DB"
-       connectionString="Server=(localdb)\MSSQLLocalDB;
-                         Database=MiniDARMAS_DB;
-                         Trusted_Connection=True;
-                         TrustServerCertificate=True;" />
-</connectionStrings>
+MiniDARMAS.Installer\bin\Debug\MiniDARMAS.Installer.msi
 ```
-- Save changes
-
-### Step 4: Configure File Storage
-- Create folders for file storage:
-```bash
-C:\MiniDARMAS\Audio
-C:\MiniDARMAS\Documents
-C:\MiniDARMAS\Signatures
-```
-- Grant read/write permissions to the application user
-- Update application settings if paths are configurable
-
-### Step 5: Build the Application
-
-- Open solution in Visual Studio
-- Restore NuGet packages (if any)
-- Build the solution (Build → Build Solution)
-- Fix any build errors
-
-### Step 6: Run Initial Test
-
-- Run the application
-- Test database connection
-- Log in using a test Admin account
-- Create a test meeting
-- Verify data appears in DataGridView
-
-### Step 7: Configure Users and Roles
-- Log in as Admin
-- Create system users:
-- Operator
-- Transcriber
-- Editor
-- Approver
-- Assign roles and activate accounts
-
-### Step 8: Verify Audio & Documents
-
-- Upload or place a test audio file in:
-``` bash
-  C:\MiniDARMAS\Audio
-```
-- Assign recording to a transcriber
-- Test audio playback
-- Test document attachments and previews
-
-### Step 9: Localization Check (Optional)
-
-- Switch UI language (Amharic / English)
-- Verify correct display of all labels and buttons
-
-### Step 10: Final Verification
-- Test full workflow:
-- Meeting creation
-- Agenda management
-- Recording
-- Transcription
-- Editorial review
-
-### Final approval
-
-- Verify activity logs
-- Generate and preview final Minutes of Meeting
-
-
+- Download/Copy: Get the MiniDARMAS.Installer.msi file to the target computer.
+- Run: Double-click the file to start the setup wizard.
+- Install: Follow the on-screen instructions (Next > Install > Finish).
+- Note: Since this is a self-signed installer, Windows might ask for confirmation. Click "Yes" or "Run anyway" if prompted.
+- Launch: Look for "Digital Meeting Management System" on the Desktop or in the Start Menu.
+-- 
+--
 ## Contributing
 
 Thank you for considering contributing! Please:
