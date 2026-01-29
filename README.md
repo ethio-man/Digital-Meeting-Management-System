@@ -79,8 +79,16 @@ A WinForms-based meeting management and transcription system that supports recor
 - Admin Dashboard  
   ![Dashboard screenshot](docs/screenshots/dashboard.png)
 - Activity Logs
-- ![Activities log](docs/screenshots/activity-log)
-- Create meeting / Agenda editor  
+- ![Activities log](docs/screenshots/activity-log.png)
+- User Managment Form
+- ![Manage users](docs/screenshots/user-Management.png)
+- Manage meeting 
+- ![Meeting management](docs/screenshots/meeting.png)
+- Manage Agenda
+- ![Managing Agendas](docs/screenshots/agenda.png)
+- Transcriber Page
+- ![Meeting Transcription page](docs/screenshots/transcriber.png)
+- 
   ![Create meeting screenshot](docs/screenshots/create-meeting.png)
 
 - Meeting details / Minutes  
