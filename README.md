@@ -25,16 +25,52 @@ A WinForms-based meeting management and transcription system that supports recor
 
 ## Features
 
-- Create, edit, and schedule meetings
-- Build and share meeting agendas
-- Invite attendees and manage RSVPs
-- Record meeting minutes and assign action items
-- Search and filter meetings by date, organizer, or tag
-- User authentication and role-based access (admin / organizer / attendee)
-- Export meeting minutes to PDF (TODO: if implemented)
+### User & Security
 
-> TODO: Update the list above to match the features actually implemented in this repo.
+- Role-based login and authentication (Admin, Operator, Transcriber, Editor, Approver)
+- Secure database connection and session handling
+- User management (create, edit, activate/deactivate users)
+  
+### Meeting Management
+- Create, update, and delete meeting records
+- Manage meeting details (meeting number, date, location, chairperson)
+- View and search historical meetings
+- Sort meetings using DataGridView headers
+  
+### Agenda Management
+- Create and manage multiple agenda items per meeting
+- Attach reference documents to agendas
+- Edit and remove agenda items
+- Assign agenda items to recordings and transcriptions
 
+### Audio Recording & Playback
+
+- Record live meeting audio segments
+- Automatic time-based audio segmentation
+- Store and manage audio file paths
+- Integrated audio playback for transcribers
+- Play, pause, stop, and seek audio recordings
+  Transcription Management
+
+### Assign audio recordings to transcribers
+
+- Text-based transcription editor
+- Track transcription progress and completion status
+- Save draft and submit completed transcriptions
+  
+### Editorial Review & Approval
+
+- Editor review of submitted transcriptions
+- Make corrections and finalize text
+- Approver validation and final approval
+-  Track editorial and approval status
+
+### Minutes of Meeting Generation
+
+- Automatic compilation of approved transcriptions
+- Generate formatted “Minutes of Meeting (ቃለ ጉባኤ)” documents
+- Preview and print final reports
+- Insert digital signature placeholders
 ---
 
 ## Demo / Screenshots
