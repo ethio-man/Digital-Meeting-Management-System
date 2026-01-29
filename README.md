@@ -11,11 +11,9 @@ A WinForms-based meeting management and transcription system that supports recor
 - [Tech stack](#tech-stack)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Configuration](#configuration)
-- [Running locally](#running-locally)
-- [Database & Migrations](#database--migrations)
-- [Running tests](#running-tests)
-- [Deployment](#deployment)
+
+
+
 - [Contributing](#contributing)
 - [Roadmap](#roadmap)
 - [License](#license)
