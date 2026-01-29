@@ -68,7 +68,7 @@ A WinForms-based meeting management and transcription system that supports recor
 ### Minutes of Meeting Generation
 
 - Automatic compilation of approved transcriptions
-- Generate formatted “Minutes of Meeting (ቃለ ጉባኤ)” documents
+- Generate formatted “Minutes of Meeting ” documents
 - Preview and print final reports
 - Insert digital signature placeholders
 ---
@@ -81,33 +81,27 @@ A WinForms-based meeting management and transcription system that supports recor
 - Activity Logs
 - ![Activities log](docs/screenshots/activity-log.png)
 - User Managment Form
-- ![Manage users](docs/screenshots/user-Management.png)
+- ![Manage users](docs/screenshots/user-Managment.png)
 - Manage meeting 
 - ![Meeting management](docs/screenshots/meeting.png)
 - Manage Agenda
 - ![Managing Agendas](docs/screenshots/agenda.png)
 - Transcriber Page
 - ![Meeting Transcription page](docs/screenshots/transcriber.png)
-- 
-  ![Create meeting screenshot](docs/screenshots/create-meeting.png)
-
+- Editor Page
+- ![Editting Transcriptions](docs/screenshots/editor.png)
 - Meeting details / Minutes  
   ![Meeting details screenshot](docs/screenshots/meeting-details.png)
-
-Notes:
-- Replace the placeholder images above with real screenshots.
-- Prefer PNG or JPG images sized appropriately (e.g., 1280×720).
-- If you want to include animated demos, add GIFs or short MP4s to `docs/screenshots/` and link them here.
 
 ---
 
 ## Tech stack
 
-- Frontend: TODO (e.g., React, Vue, Angular)  
-- Backend: TODO (e.g., Node.js + Express, Django, Flask, .NET Core)  
-- Database: TODO (e.g., PostgreSQL, MySQL, SQLite)  
-- Authentication: TODO (JWT, OAuth2, session-based)  
-
+- Frontend(Desktop UI): C# WinForms (.NET)
+- Backend & Business Logic: C# (.NET)
+- Database: Microsoft SQL Server 
+- Data Access : ADO.NET (Microsoft.Data.SqlClient)
+- Architecture & Patterns : MVC Architecture
 Update the items above with the technologies your project uses.
 
 ---
