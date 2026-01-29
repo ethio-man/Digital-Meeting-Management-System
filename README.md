@@ -11,13 +11,7 @@ A WinForms-based meeting management and transcription system that supports recor
 - [Tech stack](#tech-stack)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Configuration](#configuration)
-- [Running locally](#running-locally)
-- [Database & Migrations](#database--migrations)
-- [Running tests](#running-tests)
-- [Deployment](#deployment)
 - [Contributing](#contributing)
-- [Roadmap](#roadmap)
 - [License](#license)
 - [Contact](#contact)
 
@@ -68,162 +62,171 @@ A WinForms-based meeting management and transcription system that supports recor
 ### Minutes of Meeting Generation
 
 - Automatic compilation of approved transcriptions
-- Generate formatted “Minutes of Meeting (ቃለ ጉባኤ)” documents
+- Generate formatted “Minutes of Meeting ” documents
 - Preview and print final reports
 - Insert digital signature placeholders
 ---
 
 ## Demo / Screenshots
-
-- Landing / Dashboard  
+- Login page
+  ![Login screeshot](docs/screenshots/login.png)
+- Admin Dashboard  
   ![Dashboard screenshot](docs/screenshots/dashboard.png)
-
-- Create meeting / Agenda editor  
-  ![Create meeting screenshot](docs/screenshots/create-meeting.png)
-
+- Activity Logs
+- ![Activities log](docs/screenshots/activity-log.png)
+- User Managment Form
+- ![Manage users](docs/screenshots/user-Managment.png)
+- Manage meeting 
+- ![Meeting management](docs/screenshots/meeting.png)
+- Manage Agenda
+- ![Managing Agendas](docs/screenshots/agenda.png)
+- Transcriber Page
+- ![Meeting Transcription page](docs/screenshots/transcriber.png)
+- Editor Page
+- ![Editting Transcriptions](docs/screenshots/editor.png)
 - Meeting details / Minutes  
   ![Meeting details screenshot](docs/screenshots/meeting-details.png)
-
-Notes:
-- Replace the placeholder images above with real screenshots.
-- Prefer PNG or JPG images sized appropriately (e.g., 1280×720).
-- If you want to include animated demos, add GIFs or short MP4s to `docs/screenshots/` and link them here.
 
 ---
 
 ## Tech stack
 
-- Frontend: TODO (e.g., React, Vue, Angular)  
-- Backend: TODO (e.g., Node.js + Express, Django, Flask, .NET Core)  
-- Database: TODO (e.g., PostgreSQL, MySQL, SQLite)  
-- Authentication: TODO (JWT, OAuth2, session-based)  
-
-Update the items above with the technologies your project uses.
-
+- Frontend(Desktop UI): C# WinForms (.NET)
+- Backend & Business Logic: C# (.NET)
+- Database: Microsoft SQL Server 
+- Data Access : ADO.NET (Microsoft.Data.SqlClient)
+- Architecture & Patterns : MVC Architecture
 ---
 
 ## Prerequisites
+### Software Requirements
+- Microsoft Windows Operating System (Windows 10 or later)
+- Microsoft Visual Studio (with .NET desktop development workload)
+- Microsoft SQL Server (Express, LocalDB, or Standard Edition)
+- SQL Server Management Studio (SSMS)
+- .NET Runtime
+- 
+### Database Requirements
+- Created SQL Server database (e.g., MiniDARMAS_DB)
+- Required database tables (Users, Meetings, Agendas, Recordings, Transcriptions, ActivityLogs, etc.)
+- Proper database permissions for the application user
 
-- Node.js vXX (if using Node) and npm / yarn  
-- Python 3.X (if using Python) and pip  
-- Database server (PostgreSQL / MySQL) if not using SQLite  
-
-Replace the placeholders above and list any other tools (Docker, make, etc.) your project needs.
-
+### System Requirements
+- Minimum 4 GB RAM (8 GB recommended)
+- At least 2 GHz processor
+- Sufficient disk space for:
+- Database files
+- Audio recordings
+- Attached documents
 ---
 
 ## Installation
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/ethio-man/Digital-Meeting-Management-System.git
-   cd Digital-Meeting-Management-System
-   ```
+### Step 1: Install Required Software
 
-2. Install dependencies
-   - For Node projects:
-     ```bash
-     npm install
-     # or
-     yarn install
-     ```
-   - For Python projects:
-     ```bash
-     python -m venv venv
-     source venv/bin/activate   # macOS / Linux
-     venv\Scripts\activate      # Windows
-     pip install -r requirements.txt
-     ```
+- Install Microsoft Windows 10 or later
 
-Replace the commands above with the exact commands used by your project.
+- Install Microsoft Visual Studio
 
----
+- Select .NET desktop development workload
 
-## Configuration
+- Install Microsoft SQL Server (Express or LocalDB)
 
-Create a `.env` file (or edit the config) with required environment variables:
+- Install SQL Server Management Studio (SSMS)
 
-Example `.env` (update with real keys)
-```
-DATABASE_URL=postgres://user:password@localhost:5432/dbname
-SECRET_KEY=your-secret-key
-PORT=3000
-```
+### Step 2: Set Up the Database
 
-Describe any other environment or configuration steps required (API keys, OAuth client IDs, etc.).
+- Open SSMS
+- Connect to SQL Server
+- Create the database:
+- CREATE DATABASE MiniDARMAS_DB;
+- Run the provided SQL scripts to create all required tables:
+- Users
+- Meetings
+- Agendas
+- Recordings
+- Transcriptions
+- ActivityLogs
+- Verify tables are created successfully
 
----
+### Step 3: Configure Database Connection
 
-## Running locally
-
-- For Node/Express + React style apps:
-  ```bash
-  # start backend
-  npm run start:server
-
-  # start frontend (if separate)
-  npm run start:client
-  ```
-
-- For Python/Django:
-  ```bash
-  python manage.py migrate
-  python manage.py runserver
-  ```
-
-Replace the commands above with exact project scripts.
-
----
-
-## Database & Migrations
-
-If your project uses migrations:
+- Open the project in Visual Studio
+- Edit App.config
+- Set the correct connection string:
 ```bash
-# Example (Django)
-python manage.py migrate
-
-# Example (Node + Sequelize)
-npx sequelize db:migrate
+<connectionStrings>
+  <add name="MiniDARMAS_DB"
+       connectionString="Server=(localdb)\MSSQLLocalDB;
+                         Database=MiniDARMAS_DB;
+                         Trusted_Connection=True;
+                         TrustServerCertificate=True;" />
+</connectionStrings>
 ```
+- Save changes
 
-Document seeding and how to create an initial admin user:
+### Step 4: Configure File Storage
+- Create folders for file storage:
 ```bash
-# Example
-python manage.py createsuperuser
+C:\MiniDARMAS\Audio
+C:\MiniDARMAS\Documents
+C:\MiniDARMAS\Signatures
 ```
+- Grant read/write permissions to the application user
+- Update application settings if paths are configurable
 
----
+### Step 5: Build the Application
 
-## Running tests
+- Open solution in Visual Studio
+- Restore NuGet packages (if any)
+- Build the solution (Build → Build Solution)
+- Fix any build errors
 
-Run the test suite:
-```bash
-# Node
-npm test
+### Step 6: Run Initial Test
 
-# Python
-pytest
+- Run the application
+- Test database connection
+- Log in using a test Admin account
+- Create a test meeting
+- Verify data appears in DataGridView
+
+### Step 7: Configure Users and Roles
+- Log in as Admin
+- Create system users:
+- Operator
+- Transcriber
+- Editor
+- Approver
+- Assign roles and activate accounts
+
+### Step 8: Verify Audio & Documents
+
+- Upload or place a test audio file in:
+``` bash
+  C:\MiniDARMAS\Audio
 ```
+- Assign recording to a transcriber
+- Test audio playback
+- Test document attachments and previews
 
-Describe any integration tests, end-to-end tests, or CI configuration.
+### Step 9: Localization Check (Optional)
 
----
+- Switch UI language (Amharic / English)
+- Verify correct display of all labels and buttons
 
-## Deployment
+### Step 10: Final Verification
+- Test full workflow:
+- Meeting creation
+- Agenda management
+- Recording
+- Transcription
+- Editorial review
 
-Suggested options:
-- Deploy backend to: Heroku, DigitalOcean, AWS Elastic Beanstalk, Docker/Kubernetes
-- Deploy frontend to: Vercel, Netlify, GitHub Pages
+### Final approval
 
-Example Docker steps:
-```bash
-docker build -t digital-meeting .
-docker run -p 3000:3000 --env-file .env digital-meeting
-```
+- Verify activity logs
+- Generate and preview final Minutes of Meeting
 
-Add project-specific deployment instructions and recommended environment variables.
-
----
 
 ## Contributing
 
@@ -238,19 +241,6 @@ Thank you for considering contributing! Please:
 Include coding style, linting, and testing requirements (e.g., run linters and tests before submitting PR).
 
 ---
-
-## Roadmap
-
-Planned features:
-- Recurring meetings
-- Calendar integrations (Google Calendar, Outlook)
-- Advanced permissions and organizational hierarchy
-- Notifications and email reminders
-
-Add or remove items to reflect your project's roadmap.
-
----
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE) — change if another license applies.
@@ -260,5 +250,5 @@ This project is licensed under the [MIT License](LICENSE) — change if another 
 ## Contact
 
 Project maintainer: ethio-man  
-Email: TODO (add contact email)  
+Email: natymiskir@gmail.com
 Repository: https://github.com/ethio-man/Digital-Meeting-Management-System
