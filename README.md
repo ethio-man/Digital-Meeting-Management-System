@@ -129,12 +129,12 @@ Include coding style, linting, and testing requirements (e.g., run linters and t
 ---
 ## License
 
-This project is licensed under the [MIT License](LICENSE) — change if another license applies.
+This project is licensed under the [MIT License](LICENSE) 
 
 ---
 
 ## Contact
 
-Project maintainer: ethio-man  
+Project maintainer: Dagmawi Antehun 
 Email: natymiskir@gmail.com
 Repository: https://github.com/ethio-man/Digital-Meeting-Management-System
