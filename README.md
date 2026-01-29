@@ -99,29 +99,9 @@ A WinForms-based meeting management and transcription system that supports recor
 ---
 
 ## Prerequisites
-### Software Requirements
-- Microsoft Windows Operating System (Windows 10 or later)
-- Microsoft Visual Studio (with .NET desktop development workload)
-- Microsoft SQL Server (Express, LocalDB, or Standard Edition)
-- SQL Server Management Studio (SSMS)
-- .NET Runtime
-- 
-### Database Requirements
-- Created SQL Server database (e.g., MiniDARMAS_DB)
-- Required database tables (Users, Meetings, Agendas, Recordings, Transcriptions, ActivityLogs, etc.)
-- Proper database permissions for the application user
-
-### System Requirements
-- Minimum 4 GB RAM (8 GB recommended)
-- At least 2 GHz processor
-- Sufficient disk space for:
-- Database files
-- Audio recordings
-- Attached documents
----
+- You can install this desktop application straight into your computer because it is user-ready released application software.
 
 ## Installation
-This Desktop app is user ready published Application software so you can install it direcly to your machine 
 ---
 ## The installer package is located at: 
 ```bash
