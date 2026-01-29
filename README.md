@@ -75,8 +75,6 @@ A WinForms-based meeting management and transcription system that supports recor
 
 ## Demo / Screenshots
 
-Add screenshots to the `docs/screenshots/` folder and update the image filenames below.
-
 - Landing / Dashboard  
   ![Dashboard screenshot](docs/screenshots/dashboard.png)
 
