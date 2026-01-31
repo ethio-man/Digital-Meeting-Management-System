@@ -88,7 +88,7 @@ namespace MiniDARMAS.Infrastructure
         }
 
         
-        /// </summary>
+        
         /// <param name="form">Form to localize</param>
         public static void AutoLocalize(Form form)
         {
