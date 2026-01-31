@@ -67,7 +67,7 @@ A WinForms-based meeting management and transcription system that supports recor
 - Insert digital signature placeholders
 ---
 
-## Demo / Screenshots
+## Screenshots
 - Login page
   ![Login screeshot](docs/screenshots/login.png)
 - Admin Dashboard  
